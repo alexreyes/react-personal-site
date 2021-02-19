@@ -1,14 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
 import NavBar from './components/Navbar';
 import { Heading } from 'evergreen-ui';
+import { Row } from 'reactstrap';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <NavBar />
       <Heading size={900} marginTop="default">Hi 👋 </Heading>
-      <Heading size={700} marginTop="default">I'm Alex. Welcome to my place on the web</Heading>
+      <Heading size={700} marginTop="default">
+        I'm Alex Reyes. Welcome to my site
+      </Heading>
+      <br></br>
+      <Row>
+          <a href="twitter.com" className="sm_Links">Twitter</a>
+          <a href="twitter.com" className="sm_Links">Github</a>
+          <a href="twitter.com" className="sm_Links">Linkedins</a>
+      </Row>
     </div>
   );
 }
